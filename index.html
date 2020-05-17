@@ -1,0 +1,128 @@
+<!-- June's suggestions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BingeDaily.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+  <link rel="shortcut icon" type="image/png" href="binge-daily.png" />
+  <link rel="apple-touch-icon" href="binge-daily.png">
+<link rel="apple-touch-icon" sizes="76x76" href="binge-daily.png">
+<link rel="apple-touch-icon" sizes="120x120" href="binge-daily.png">
+<link rel="apple-touch-icon" sizes="152x152" href="binge-daily.png">
+  <!-- have no idea how to do js so don't change anything here till the next arrow comment -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+    });
+    });
+    </script>
+  <!-- end of js script -->
+</head>
+<body id="background">
+    <div id="intro">
+      <div id="filter"></div>
+      <div id="title">
+        <img src="working.png" alt="working people" id="intropic"/>
+        <h1>Binge.Daily.</h1>
+        <h3>Welcome to your daily suggestion of music, movies and binge worthy stuff.</h3>
+        <nav id="position">
+          <ul>
+              <li>
+                <!--overview tab-->
+                <a href="#trending" class="navlink">Trending</a>
+              </li>
+              <li>
+                <!--music tab-->
+                <a href="#music" class="navlink">Music</a>
+              </li>
+              <li>
+                <!--movie tab-->
+                <a href="#movies" class="navlink">Movies</a>
+              </li>
+              <li>
+                <!--contacts tab-->
+                <a href="#contact" class="navlink">Contact</a>
+              </li>
+          </ul>
+        </nav>
+        <h3 id="author">&copy;UPandDOWN 2020</h3>
+      </div>
+    </div>
+    <div id="content">
+      <div class="container1"id="trending">
+        <img src="trending.png" alt="trending picture" id="intropic"/>
+        <h1 class="hefdading1">Trending.</h1>
+      </div>
+      <div class="container2">
+        <div class="space"></div>
+        <img class="thumbnail" src="supalonely.jpg" alt="Supalonely image" />
+        <h4 class="heading2">Supalonely</h4>
+        <h4>BENEE</h4>
+        <p>A punky, fun, sort of awesome piece of music that motivates you in the midst of quarantine.</p>
+        <div class="space2"></div>
+        <div class="musicshort">
+          <iframe src="https://open.spotify.com/embed/track/4nK5YrxbMGZstTLbvj6Gxw" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="space3">  </div>
+      <div class="container2">
+        <div class="space"></div>
+        <img class="thumbnail" src="stuckwithu.jpg" alt="Stuck with U image" />
+        <h4 class="heading2">Stuck with U</h4>
+        <h4>Ariana Grande &amp; Justin Bieber</h4>
+        <p>Through the exquisite beats of the bass and the soothing melody of the vocals by the teen popular duo, this piece of quality quarantine music is an absolute hit.</p>
+        <div class="space2"></div>
+        <div class="musicshort">
+            <iframe src="https://open.spotify.com/embed/album/5mUdh6YWnUvf0MfklEk1oi" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="space3"></div>
+      <div class="container2">
+          <div class="space"></div>
+          <img class="thumbnail" src="bekind.jpg" alt="Supalonely image" />
+          <h4 class="heading2">Be Kind</h4>
+          <h4>Marshmello &amp; Halsey</h4>
+          <p>Modern pop suitable for any time in the day. A must listen for any pop lover.</p>
+          <div class="space2"></div>
+          <div class="musicshort">
+            <iframe src="https://open.spotify.com/embed/track/3Z8FwOEN59mRMxDCtb8N0A%3Fcontext%3Dspotify%253Aplaylist%253A37i9dQZF1DXcBWIGoYBM5M" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      </div>
+      <footer id="contact">
+        <div id="linkbox">
+          <a href="https://www.instagram.com/zheweikho/" id="link"class="fab fa-instagram"></a>
+          <a href="https://www.instagram.com/zheweikho/" id="link"class="fab fa-reddit"></a>
+          <a href="https://www.instagram.com/zheweikho/" id="link"class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/zheweikho/" id="link"class="fab fa-discord"></a>
+        </div>
+      </footer>
+
+
+</body>
+</html>
