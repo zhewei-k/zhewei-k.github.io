@@ -1,5 +1,5 @@
 <!-- June's suggestions -->
-<!-- hello! -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,6 +57,9 @@
                 <a href="#trending" class="navlink">Trending</a>
               </li>
               <li>
+                <a href="#vote" class="navlink">Vote!</a>
+              </li>
+              <li>
                 <!--music tab-->
                 <a href="#music" class="navlink">Music</a>
               </li>
@@ -68,6 +71,7 @@
                 <!--contacts tab-->
                 <a href="#contact" class="navlink">Contact</a>
               </li>
+
           </ul>
         </nav>
         <h3 id="author">&copy;UPandDOWN 2020</h3>
@@ -113,15 +117,51 @@
             <iframe src="https://open.spotify.com/embed/track/3Z8FwOEN59mRMxDCtb8N0A%3Fcontext%3Dspotify%253Aplaylist%253A37i9dQZF1DXcBWIGoYBM5M" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
-      </div>
-      <footer id="contact">
-        <div id="linkbox">
-          <a href="#contact" id="link"class="fab fa-instagram"></a>
-          <a href="#contact" id="link"class="fab fa-reddit"></a>
-          <a href="#contact" id="link"class="fab fa-twitter"></a>
-          <a href="#contact" id="link"class="fab fa-discord"></a>
+      <div class="space3" id="vote"></div>
+      <div class="container2">
+        <div class="form">
+          <form action="" method="post">
+            <h2 id="vote_title">Vote for the next song on the charts!</h2>
+            <div class="center_align">
+              <label for="singer">Singer: </label>
+              <input name="singer" list="singer_library" id="singer" required minlength="3" maxlength="20"/>
+                <datalist id="singer_library">
+                  <option value="Ariana Grande">Ariana Grande</option>
+                  <option value="Justin Bieber">Justin Bieber</option>
+                  <option value="Ava Max">Ava Max</option>
+                  <option value="Drake">Drake</option>
+                  <option value="Gracie Abrams">Gracie Abrams</option>
+                </datalist>
+              <br />
+              <label for="song">Song: </label>
+              <input name="song" list="song_library" id="song" required minlength="3" maxlength="30" />
+                <datalist id="song_library">
+                  <option value="Rain on Me">Rain on Me</option>
+                  <option value="Yummy">Yummy</option>
+                  <option value="Intentions">Intentions</option>
+                  <option value="Salt">Salt</option>
+                  <option value="I miss you, I'm sorry">I miss you, I'm sorry</option>
+                  <option value="Toosie Slide">Toosie Slide</option>
+                </datalist>
+                <br />
+              <input type="submit" value="Vote!" class="submit_button"/>
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <footer id="linkbox">
+        <a href="#contact" id="link"class="fab fa-instagram"></a>
+        <a href="#contact" id="link"class="fab fa-reddit"></a>
+        <a href="#contact" id="link"class="fab fa-twitter"></a>
+        <a href="#contact" id="link"class="fab fa-discord"></a>
       </footer>
+    </div>
+
+</body>
+</html>
 
 
 </body>

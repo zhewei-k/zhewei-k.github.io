@@ -227,3 +227,41 @@ footer{
   font-size:30px;
   text-align:center;
 }
+
+.form{
+  padding-top: 50px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 400px;
+  height:auto;
+}
+#vote_title{
+  color: black;
+  padding-top: 30px;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px
+}
+.center_align{
+  text-align: center;
+}
+label{
+  font-family: 'latolight';
+  font-size: 20px;
+  color: #2b2d42;
+}
+#singer{
+  color: #2b2d42;
+  font-family: 'latolight';
+
+}
+.submit_button{
+  font-family: 'latolight';
+  font-size: 30px;
+  color: #f1faee;
+  background-color: #2b2d42;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
