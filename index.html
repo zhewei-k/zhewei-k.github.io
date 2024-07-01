@@ -1,168 +1,130 @@
-<!-- June's suggestions -->
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Zhe-Wei Kho</title>
+    <meta name="description" content="">
+    <meta name="author" content="Zhe-Wei Kho">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>BingeDaily.com</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-  <link rel="shortcut icon" type="image/png" href="binge-daily.png" />
-  <link rel="apple-touch-icon" href="binge-daily.png">
-<link rel="apple-touch-icon" sizes="76x76" href="binge-daily.png">
-<link rel="apple-touch-icon" sizes="120x120" href="binge-daily.png">
-<link rel="apple-touch-icon" sizes="152x152" href="binge-daily.png">
-  <!-- have no idea how to do js so don't change anything here till the next arrow comment -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    <!-- icon settings-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-      // Store hash
-      var hash = this.hash;
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-    });
-    });
-    </script>
-  <!-- end of js script -->
-</head>
-<body id="background">
-    <div id="intro">
-      <div id="filter"></div>
-      <div id="title">
-        <img src="working.png" alt="working people" id="intropic"/>
-        <h1>Binge.Daily.</h1>
-        <h3>Welcome to your daily suggestion of music, movies and binge worthy stuff.</h3>
-        <nav id="position">
-          <ul>
-              <li>
-                <!--overview tab-->
-                <a href="#trending" class="navlink">Trending</a>
-              </li>
-              <li>
-                <a href="#vote" class="navlink">Vote!</a>
-              </li>
-              <li>
-                <!--music tab-->
-                <a href="#music" class="navlink">Music</a>
-              </li>
-              <li>
-                <!--movie tab-->
-                <a href="#movies" class="navlink">Movies</a>
-              </li>
-              <li>
-                <!--contacts tab-->
-                <a href="#contact" class="navlink">Contact</a>
-              </li>
+    <header id="header">
+      <h1 style="margin-top:100px;">Zhe-Wei Kho</h1>
 
-          </ul>
-        </nav>
-        <h3 id="author">&copy;UPandDOWN 2020</h3>
-      </div>
-    </div>
-    <div id="content">
-      <div class="container1"id="trending">
-        <img src="trending.png" alt="trending picture" id="intropic"/>
-        <h1 class="hefdading1">Trending.</h1>
-      </div>
-      <div class="container2">
-        <div class="space"></div>
-        <img class="thumbnail" src="supalonely.jpg" alt="Supalonely image" />
-        <h4 class="heading2">Supalonely</h4>
-        <h4>BENEE</h4>
-        <p>A punky, fun, sort of awesome piece of music that motivates you in the midst of quarantine.</p>
-        <div class="space2"></div>
-        <div class="musicshort">
-          <iframe src="https://open.spotify.com/embed/track/4nK5YrxbMGZstTLbvj6Gxw" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-      <div class="space3">  </div>
-      <div class="container2">
-        <div class="space"></div>
-        <img class="thumbnail" src="stuckwithu.jpg" alt="Stuck with U image" />
-        <h4 class="heading2">Stuck with U</h4>
-        <h4>Ariana Grande &amp; Justin Bieber</h4>
-        <p>Through the exquisite beats of the bass and the soothing melody of the vocals by the teen popular duo, this piece of quality quarantine music is an absolute hit.</p>
-        <div class="space2"></div>
-        <div class="musicshort">
-            <iframe src="https://open.spotify.com/embed/album/5mUdh6YWnUvf0MfklEk1oi" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-      <div class="space3"></div>
-      <div class="container2">
-          <div class="space"></div>
-          <img class="thumbnail" src="bekind.jpg" alt="Supalonely image" />
-          <h4 class="heading2">Be Kind</h4>
-          <h4>Marshmello &amp; Halsey</h4>
-          <p>Modern pop suitable for any time in the day. A must listen for any pop lover.</p>
-          <div class="space2"></div>
-          <div class="musicshort">
-            <iframe src="https://open.spotify.com/embed/track/3Z8FwOEN59mRMxDCtb8N0A%3Fcontext%3Dspotify%253Aplaylist%253A37i9dQZF1DXcBWIGoYBM5M" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-      <div class="space3" id="vote"></div>
-      <div class="container2">
-        <div class="form">
-          <form action="" method="post">
-            <h2 id="vote_title">Vote for the next song on the charts!</h2>
-            <div class="center_align">
-              <label for="singer">Singer: </label>
-              <input name="singer" list="singer_library" id="singer" required minlength="3" maxlength="20"/>
-                <datalist id="singer_library">
-                  <option value="Ariana Grande">Ariana Grande</option>
-                  <option value="Justin Bieber">Justin Bieber</option>
-                  <option value="Ava Max">Ava Max</option>
-                  <option value="Drake">Drake</option>
-                  <option value="Gracie Abrams">Gracie Abrams</option>
-                </datalist>
-              <br />
-              <label for="song">Song: </label>
-              <input name="song" list="song_library" id="song" required minlength="3" maxlength="30" />
-                <datalist id="song_library">
-                  <option value="Rain on Me">Rain on Me</option>
-                  <option value="Yummy">Yummy</option>
-                  <option value="Intentions">Intentions</option>
-                  <option value="Salt">Salt</option>
-                  <option value="I miss you, I'm sorry">I miss you, I'm sorry</option>
-                  <option value="Toosie Slide">Toosie Slide</option>
-                </datalist>
-                <br />
-              <input type="submit" value="Vote!" class="submit_button"/>
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+      </ul>           
+    </header>
+
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          <div id="about" class="content-region hide">
+            <h2 class="opener">hey!</h2>
+            <p>
+              I'm Zhe-Wei, a penultimate year Mechanical Engineering student at the University of Sheffield. This is where I document all my projects. 🚀
+            </p>
+          </div>
+          
+          <div id="projects" class="content-region hide">
+            <!-- 2024 -->
+            <h2 class="opener">2024</h2>
+            <h3>Vulcan V3</h3>
+            <p>
+              Ongoing⏳
+            </p>
+            <h3>250W Gearbox</h3>
+            <img src="media/gearbox.jpg" class="img-inline">
+            <p>
+              We designed a gearbox for accelerating a bike up to 15mph / 24.94kph with a maximum power consumption of 250W, as per 
+              <a href="https://www.gov.uk/government/publications/electrically-assisted-pedal-cycles-eapcs/electrically-assisted-pedal-cycles-eapcs-in-great-britain-information-sheet">EAPC UK regulations</a>.
+              <span></span>
+              This included calculations, designing and FEA simulations on the gears, bearing assembly and motor mount.
+              After iterating and prototyping on our CAD design, the components were finally manufactured by laser-cutting out of 600x400 3mm acrylic. 
+              The product was then assembled with M8 nuts, threaded rods, and self-lubricated bearings and completed by attaching a sprocket assembly. 
+              <span></span>
+              <strong>Classification:</strong> Coursework
+              <span></span>
+              <strong>Grade:</strong> First-Class (>70%)
+            </p>
+            <h3>LUXO Concept</h3>
+            <img src="media/luxo.png" class="img-inline">
+            <p>
+              In 2017, around 102,000 knee replacements and 91,000 hip replacements were conducted in the UK and Eire 
+              <a href="https://www.hqip.org.uk/wp-content/uploads/2018/11/NJR-15th-Annual-Report-2018.pdf">[1]</a>. 
+              The annual demand for hip and knee replacements is projected to increase by 174% and 673% respectively 
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28695187/">[2]</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S1473309918307552?via%3Dihub">[3]</a>.
+              <span></span>
+              The aim of this product was to reduce the number of prosthetic joint infections by 50% within a year after NHS implementation.
+              To tackle this, we developed the LUXO concept, a handheld UV light device specifically designed for surgical applications.
+              <span></span>
+              Features:
+              <ul>
+                <li>Non-carcinogenic: 222 nm UVC light</li>
+                <li>Point-and-Click: 19.5 deg FOV for 10 seconds at 30 cm distance</li>
+                <li>Wireless Charging: easy to clean </li>
+              </ul>
+              <span></span>
+              <strong>Classification:</strong> Coursework
+              <span></span>
+              <strong>Grade:</strong> Distinction
+            </p>
+            
+            <!-- 2023 -->
+            <h2>2023</h2>
+            <h3>Water Bottle Rocket</h3>
+            <p>
+              writing...
+            </p>
+            <!-- archive -->
+            <h2>Archive</h2>
+            <p>
+              You can find my older projects here -> <a href="archive.html">archived</a>
+            </p>
             </div>
-          </form>
+          </div>
+          
         </div>
       </div>
     </div>
 
-    <div id="contact">
-      <footer id="linkbox">
-        <a href="#contact" id="link"class="fab fa-instagram"></a>
-        <a href="#contact" id="link"class="fab fa-reddit"></a>
-        <a href="#contact" id="link"class="fab fa-twitter"></a>
-        <a href="#contact" id="link"class="fab fa-discord"></a>
-      </footer>
-    </div>
-
-</body>
-</html>
-
-
-</body>
+    <footer>  
+      <a href="https://linkedin.com/in/zhe-wei-kho/">>linkedin</a>
+      <a href="https://medium.com/@zhewei.kho">>medium</a>
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
 </html>
