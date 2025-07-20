@@ -12,9 +12,18 @@ body {
   line-height: 1.6;
   font-family: "Inter", Helvetica, Arial, sans-serif;
 }
-header, footer, ul.main-menu {
+header, footer {
   font-weight: 400;
   font-family: "Space Mono", Helvetica, Arial, sans-serif;
+}
+ul.main-menu {
+  font-weight: 400;
+  font-family: "Space Mono", Helvetica, Arial, sans-serif;
+}
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -63,6 +72,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 1rem auto; /* bottom margin for paragraphs */
+  text-align: justify;
 }
 span {
   display:block;
@@ -92,6 +102,13 @@ blockquote p:last-child {
   margin-bottom: 0;  
 }
 
+img {
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
 /**
  * Image styles
  */
@@ -101,19 +118,6 @@ blockquote p:last-child {
   max-height: 400px;
   margin: 0 auto 1rem auto;
 }
-
-.img-container {
-  display: flex;
-  max-width: 600px;
-  max-height:400px;
-}
-.img-container img{
-  flex: 1 1;
-  width: 10px;
-  height:auto;
-  padding:0 1% 0 0;
-}
-
 /**
  * Layout styles
  */
@@ -174,6 +178,3 @@ ul.main-menu li a.active {
 .show {
   display:block;
 }
-
-
-
