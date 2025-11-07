@@ -65,44 +65,77 @@
           <div id="intro" class="content-region hide">
             <h2 class="opener">about me</h2>
             <p>
-              I'm Zhe-Wei, a "Sarawakian" and graduate mechanical engineering student from the University of Sheffield. 
-              My interest is lies in pushing the boundaries of technology, particularly lightweight structures (think carbon fibre or additive manufacturing!).
+              Hi! I'm Zhe-Wei. I'm an MSc Composites student at the ✈️Department of Aeronautics of Imperial College London.
+              I'm now at Imperial after completing my BEng in Mechanical Engineering at University of Sheffield.
+              <span></span>
+              I have developed a keen interest in understanding more about the application of lightweight structures and metamaterials.
+              My experience includes developing solutions for electric vertical takeoff and landing (eVTOL) aircraft and optimising additively manufactured titanium triply periodic minimal surface (TPMS) structures.
+              <span></span>
+              With eVTOL aircraft, I've co-led the design of a 3.2-meter wingspan carbon fibre (CF) composite drone, comprised of a monocoque CF fuselage, foam-core CF aero surfaces, and a 20-meter payload deployment system.
+              With additively manufactured TPMS structures, I've automated the optimisation process for orthopaedic implants, with potential of savings of over £2 billion pounds for the NHS if implemented.
+              <span></span>
+              As a strong advocator for making STEM education more accessible, I am interested in empowering just the leaders of tomorrow, but everyone, no matter their background, is able to find success in their life.
+              For more information about these projects, you can find more information on the <a href="#projects">Projects</a> tab, it is fully open-source and is available on <a href="https://github.com/zhewei-k/zhewei-k.github.io">👾Github</a>.
             </p>
+            <h2>documents</h2>
             <p>
-              I'm currently an incoming MSc student, focusing on composites at the ✈️ Department of Aeronautics, Imperial College London.
-            </p>
-            <p>
-              I'm a strong advocator towards making STEM education more accessible so that not just the leaders of tomorrow, but everyone, no matter their background, is able to find success in their life.
-              Likewise, while this site serves as a platform to show the recent projects I have worked on, it is fully open-source and made available on <a href="https://github.com/zhewei-k/zhewei-k.github.io">👾 Github</a> for anyone in the world.
-            </p>
-            <p>
-              Here's a link to my latest <a href="assets/cv.pdf">📄cv/resume</a>!
+              <a href="assets/cv.pdf">📄cv.pdf</a>
+              <span></span>
+              <a href="assets/fyp_report_amended.pdf">📄fyp_report_amended.pdf</a>
+              <span></span>
+              <a href="assets/gearbox_report.pdf">📄gearbox_report.pdf</a>
+              <span></span>
+              <a href="assets/luxo_technical_report.pdf">📄luxo_technical_report.pdf</a>
+              <span></span>
             </p>
             <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=n&d=ME3bHjqLpndiwL5-tMR4H2XPWbEThcu1GxdZVUDPH60&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script> -->
           </div>
           
           <div id="projects" class="content-region hide">
             <!-- Completed Projects -->
-            <h2 class="opener">Porous Structures</h2>
-            <img src="">
+            <h2 class="opener">Optimised Porous Scaffolds</h2>
+            <img src="media/porousscaffold.jpg" class="img-inline">
             <p>
-              Coming soon!
+              Porous scaffolds are applicable to many areas, from crash structures to medical implants, achieving the desired mechanical properties is a fine balance.
+              Three out of every ten patients face complications in the 25 years after surgery in the UK <a href="https://pubmed.ncbi.nlm.nih.gov/30782341/">[1]</a> <a href="https://pubmed.ncbi.nlm.nih.gov/30782340/">[2]</a>.
+              In fact, younger patients have a 3-5 time higher risk <a href="https://pubmed.ncbi.nlm.nih.gov/28209371/">[3]</a>.
+              <span></span>
+              As a result, it is important to automate the manual, expensive, and slow optimisation process additively manufactured titanium porous scaffolds.
+              <span></span>
+              Methodology:
+              <ul>
+                <li>Model using nTop Automate 5.16.2</li>
+                <li>Analyse scaffold using Ansys Mechanical 2024 R2 via PyMAPDL 0.68.2</li>
+                <li>Optimise using secant numerical method</li>
+                <li>Export data using custom Python logger</li>
+                <li>Visualise using MATLAB</li>
+              </ul>
+              Porous scaffolds for each specified stiffness were optimised in around 15 minutes.
+              Findings also included the effect of cell configuration on stiffness.
+              For more information, please refer to the <a href="assets/fyp_report_amended.pdf">final report</a>. Source code is also available on <a href="https://github.com/zhewei-k/tpms-generator">👾Github</a>.     
             </p>
+            <p>
+              <span></span>
+              <strong>Classification:</strong> Final Year Project
+              <span></span>
+              <strong>Period:</strong> June 2024 -> June 2025
+              <span></span>
+              <strong>Grade:</strong> Upper Second Class (68%)
+            </p>
+
             <h2>RideCanada4MS Fairing</h2>
             <img src="media/ridecanada4ms.jpg" class="img-inline">
             <p>
               We were tasked by <a href="https://rc4ms.org">RideCanada4MS</a>, a charity aiming to raise £1,000,000 for multiple sclerosis (MS) research to develop measures to improve the efficiency of a recumbent trike.
               Over three months, through consultation sessions with the client and after several design reviews, a rear fairing was decided as the best approach with a maximum weight of 1kg.
               Lightweighting initiatives for mounts and fixtures were also done.
-            </p>
-            <p>
+              <span></span>
               My role included overseeing the design and manufacturing of the fairing by ensuring performance and H&S requirements were met.
               One of the major decisions I had to make was on the layup process. 
               Since the finished product had to be light, pre-pregnated carbon fibre laminate (prepreg) was the choice we decided to go with.
               This involved custom moulds that had to be manufactured with a glass fibre-matrix compound due to its resistance to high temperatures.
               In the end, we were able to achieve a total weight of ~400 grams, 60% lower than the target mass.
-            </p>
-            <p>
+              <span></span>
               The RideCanada4MS journey has been covered on the <a href="https://www.bbc.co.uk/news/articles/cn8vv06x18wo">BBC</a>.
             </p>
             <p>
@@ -126,6 +159,8 @@
                 <li>New carbon fibre composite (CF) monocoque fuselage and CF foam core wings which reduced mass by 20%, and</li>
                 <li>An in-house custom winch system controlled via Arduino and Raspberry Pi 4 capable of delivering payloads from over 15 ft above ground.</li>
               </ul>
+            </p>
+            <p>
               <strong>Classification:</strong> Student Project
               <span></span>
               <strong>Period:</strong> June 2023 -> July 2024
@@ -138,21 +173,18 @@
             <p>
               Led a team to design a gearbox for accelerating a bike up to 15mph / 24.94kph with a maximum power consumption of 250W, in accordance with 
               <a href="https://www.gov.uk/government/publications/electrically-assisted-pedal-cycles-eapcs/electrically-assisted-pedal-cycles-eapcs-in-great-britain-information-sheet">EAPC UK regulations</a>.
-            </p>
-            <p>
+              <span></span>
               This included calculations, designing and FEA simulations on the gears, bearing assembly and motor mount.
               After iterating and prototyping on our CAD design, the components were finally manufactured by laser-cutting out of 600x400 3mm acrylic. 
               The product was then assembled with M8 nuts, threaded rods, and self-lubricated bearings and completed by attaching a sprocket assembly. 
-            </p>
-            <p>
+              <span></span>
               To address the complex assembly, design for ease of assembly was made one of the key criteria from the start.
               A similar approach was made when exploring mounting methods and optimising the gearbox for maximum power. 
               As a result, this allowed us to position top 1% in the cohort on overall efficiency.
-            </p>
-            <p>
+              <span></span>
               For more information, this <a href="assets/gearbox_report.pdf">report</a> shows the decision process and goes over design details.
-            </p>
-            <p>
+              <span></span>
+
               <strong>Classification:</strong> Coursework
               <span></span>
               <strong>Period:</strong> September 2023 -> May 2024
