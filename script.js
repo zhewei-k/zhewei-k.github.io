@@ -25,5 +25,15 @@
     // $('#content').load(region.slice(1) + '.html')
     
   });
+
+  $(function() {
+    const today = new Date().toLocaleDateString('en-GB', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
+
+    $('.print-date').text(today);
+  });
   
 })(jQuery);
